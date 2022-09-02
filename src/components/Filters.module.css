@@ -1,0 +1,59 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  color: gray;
+  margin: 0rem 3rem;
+}
+.filters .price-label {
+  display: block;
+  color: black;
+  font-size: 1rem;
+}
+.filters .range-input {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 150px;
+  height: 4px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.filters .range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #000000;
+}
+.filters .number-input {
+  text-align: center;
+  width: 1.5rem;
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
+.filters .number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.filters button {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.filters button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.filters img {
+  width: 2rem;
+  height: 2rem;
+}

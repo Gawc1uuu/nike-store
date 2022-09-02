@@ -1,0 +1,9 @@
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.errorPage img {
+  max-height: 100vh;
+}

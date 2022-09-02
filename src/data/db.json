@@ -1,0 +1,364 @@
+{
+  "shoes": [
+    {
+      "id": "37d7197f-525e-485e-82bc-03d32053a09a",
+      "brand": "Jordan",
+      "colorway": "Black/University Blue/Black",
+      "gender": "men",
+      "name": "University Blue",
+      "releaseDate": "2022-12-29",
+      "retailPrice": 200,
+      "shoe": "Jordan 13 Retro",
+      "styleId": "DJ5982-041",
+      "title": "Jordan 13 Retro University Blue",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "737d6c5a-e350-4193-9d02-942a9ea0826a",
+      "brand": "Jordan",
+      "colorway": "Black/Cherrywood Red-Neutral Olive-Chutney",
+      "gender": "men",
+      "name": "Black Olive",
+      "releaseDate": "2022-12-17",
+      "retailPrice": 200,
+      "shoe": "Jordan 7 Retro",
+      "styleId": "DN9782-001",
+      "title": "Jordan 7 Retro Black Olive",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "1c53b1e5-991b-4b53-9275-b1ee84341efd",
+      "brand": "Jordan",
+      "colorway": "Black/Phantom-Ale Brown-Racer Blue-Team Orange",
+      "gender": "men",
+      "name": "Travis Scott Black Phantom",
+      "releaseDate": "2022-12-15",
+      "retailPrice": 0,
+      "shoe": "Jordan 1 Retro Low OG SP",
+      "styleId": "DM7866-001",
+      "title": "Jordan 1 Retro Low OG SP Travis Scott Black Phantom",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Black-Phantom.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660247001",
+        "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Black-Phantom.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660247001",
+        "thumbUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Black-Phantom.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660247001"
+      }
+    },
+    {
+      "id": "ae5c7174-c732-496f-ac49-5bd1a071e98b",
+      "brand": "Nike",
+      "colorway": "White/Particle Grey/Photon Dust/Bright Crimson",
+      "gender": "child",
+      "name": "Multi-Swoosh White Particle Grey",
+      "releaseDate": "2022-12-15",
+      "retailPrice": 95,
+      "shoe": "Nike Air Force 1 Low",
+      "styleId": "DO6486-100",
+      "title": "Nike Air Force 1 Low Multi-Swoosh White Particle Grey Photon Dust Bright Crimson (GS)",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Nike-Air-Force-1-Low-Multi-Swoosh-White-Particle-Grey-Photon-Dust-Bright-Crimson-GS.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1653071694",
+        "smallImageUrl": "https://images.stockx.com/images/Nike-Air-Force-1-Low-Multi-Swoosh-White-Particle-Grey-Photon-Dust-Bright-Crimson-GS.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1653071694",
+        "thumbUrl": "https://images.stockx.com/images/Nike-Air-Force-1-Low-Multi-Swoosh-White-Particle-Grey-Photon-Dust-Bright-Crimson-GS.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1653071694"
+      }
+    },
+    {
+      "id": "b6ad86bb-aec8-4b13-9296-5733d57aa786",
+      "brand": "Jordan",
+      "colorway": "White/Varsity Red/Black",
+      "gender": "men",
+      "name": "Cherry (2022)",
+      "releaseDate": "2022-12-10",
+      "retailPrice": 225,
+      "shoe": "Jordan 11 Retro",
+      "styleId": "CT8012-116",
+      "title": "Jordan 11 Retro Cherry (2022)",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Air-Jordan-11-Retro-Cherry-2022.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807297",
+        "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-11-Retro-Cherry-2022.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807297",
+        "thumbUrl": "https://images.stockx.com/images/Air-Jordan-11-Retro-Cherry-2022.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807297"
+      }
+    },
+    {
+      "id": "31058c20-8d08-43d4-84ad-69d8c5f666cb",
+      "brand": "Converse",
+      "colorway": "White/Black",
+      "gender": "men",
+      "name": "Pokemon Poke Ball",
+      "releaseDate": "2022-12-07",
+      "retailPrice": 70,
+      "shoe": "Converse Chuck Taylor All-Star",
+      "styleId": "A01651C",
+      "title": "Converse Chuck Taylor All-Star Pokemon Poke Ball",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Converse-Chuck-Taylor-All-Star-Pokemon-Poke-Ball-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1650653647",
+        "smallImageUrl": "https://images.stockx.com/images/Converse-Chuck-Taylor-All-Star-Pokemon-Poke-Ball-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1650653647",
+        "thumbUrl": "https://images.stockx.com/images/Converse-Chuck-Taylor-All-Star-Pokemon-Poke-Ball-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1650653647"
+      }
+    },
+    {
+      "id": "37ace937-3112-4d43-b4a1-b9afeb962bd9",
+      "brand": "Jordan",
+      "colorway": "White/Black-Cardinal Red-Chutney",
+      "gender": "men",
+      "name": "Cardinal (2022)",
+      "releaseDate": "2022-11-26",
+      "retailPrice": 210,
+      "shoe": "Jordan 7 Retro",
+      "styleId": "CU9307-106",
+      "title": "Jordan 7 Retro Cardinal (2022)",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Air-Jordan-7-Retro-Cardinal-2022.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807271",
+        "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-7-Retro-Cardinal-2022.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807271",
+        "thumbUrl": "https://images.stockx.com/images/Air-Jordan-7-Retro-Cardinal-2022.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807271"
+      }
+    },
+    {
+      "id": "a4768603-de6b-4675-9039-786620ce423c",
+      "brand": "Jordan",
+      "colorway": "Black/Taxi",
+      "gender": "men",
+      "name": "Black Taxi",
+      "releaseDate": "2022-11-19",
+      "retailPrice": 200,
+      "shoe": "Jordan 12 Retro",
+      "styleId": "CT8013-071",
+      "title": "Jordan 12 Retro Black Taxi",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Air-Jordan-12-Retro-Black-Taxi.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807213",
+        "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-12-Retro-Black-Taxi.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807213",
+        "thumbUrl": "https://images.stockx.com/images/Air-Jordan-12-Retro-Black-Taxi.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807213"
+      }
+    },
+    {
+      "id": "c736189e-5f55-4e9d-911f-19bd7ad54d45",
+      "brand": "Jordan",
+      "colorway": "Black/Chrome",
+      "gender": "men",
+      "name": "Metallic Silver",
+      "releaseDate": "2022-11-19",
+      "retailPrice": 200,
+      "shoe": "Jordan 6 Retro",
+      "styleId": "DX2836-001",
+      "title": "Jordan 6 Retro Metallic Silver",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "3208c4cf-5823-4eef-bbb3-f18f932e27bd",
+      "brand": "Jordan",
+      "colorway": "Black/Black-Burgundy Crush",
+      "gender": "men",
+      "name": "A Ma Maniére Black",
+      "releaseDate": "2022-11-17",
+      "retailPrice": 225,
+      "shoe": "Jordan 12 Retro",
+      "styleId": "DV6989-001",
+      "title": "Jordan 12 Retro A Ma Maniére Black",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "af26feab-98a0-4b28-a4d1-afa5c89d4dbf",
+      "brand": "Jordan",
+      "colorway": "White/Black-Burgundy Crush",
+      "gender": "men",
+      "name": "A Ma Maniére White",
+      "releaseDate": "2022-11-17",
+      "retailPrice": 225,
+      "shoe": "Jordan 12 Retro",
+      "styleId": "DV6989-100",
+      "title": "Jordan 12 Retro A Ma Maniére White",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "076f7f94-6c9e-4dc6-a712-ef48e2d59486",
+      "brand": "Jordan",
+      "colorway": "Gorge Green/Metallic Silver/White",
+      "gender": "men",
+      "name": "Gorge Green",
+      "releaseDate": "2022-11-12",
+      "retailPrice": 180,
+      "shoe": "Jordan 1 Retro High OG",
+      "styleId": "DZ5485-303",
+      "title": "Jordan 1 Retro High OG Gorge Green",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "9a4d44f9-4b16-4abc-ba58-c0db340ee791",
+      "brand": "Jordan",
+      "colorway": "Varsity Red/Black-Sail-Muslin",
+      "gender": "men",
+      "name": "Chicago Reimagined",
+      "releaseDate": "2022-10-29",
+      "retailPrice": 180,
+      "shoe": "Jordan 1 Retro High OG",
+      "styleId": "DZ5485-612",
+      "title": "Jordan 1 Retro High OG Chicago Reimagined",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "d371dd76-bd1f-472d-ae34-e972ff72e571",
+      "brand": "Jordan",
+      "colorway": "Varsity Red/Black-Sail-Muslin",
+      "gender": "child",
+      "name": "Chicago Reimagined (GS)",
+      "releaseDate": "2022-10-29",
+      "retailPrice": 0,
+      "shoe": "Jordan 1 Retro High OG",
+      "styleId": "FD1437-612",
+      "title": "Jordan 1 Retro High OG Chicago Reimagined (GS)",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "ca9a4d0e-8996-4a76-939c-67d8c39c5cac",
+      "brand": "Jordan",
+      "colorway": "White/Varsity Red/Black",
+      "gender": "men",
+      "name": "Chicago (2022)",
+      "releaseDate": "2022-10-22",
+      "retailPrice": 200,
+      "shoe": "Jordan 2 Retro OG",
+      "styleId": "DX2454-106",
+      "title": "Jordan 2 Retro OG Chicago (2022)",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Air-Jordan-2-Retro-Chicago-2022.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1658420494",
+        "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-2-Retro-Chicago-2022.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1658420494",
+        "thumbUrl": "https://images.stockx.com/images/Air-Jordan-2-Retro-Chicago-2022.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1658420494"
+      }
+    },
+    {
+      "id": "eba54ab6-d5fd-4e96-9c7c-545170fd07b5",
+      "brand": "Nike",
+      "colorway": "Black/Black- Multi-Color-White",
+      "gender": "men",
+      "name": "Neckface",
+      "releaseDate": "2022-10-15",
+      "retailPrice": 0,
+      "shoe": "Nike SB Dunk Low",
+      "styleId": "DQ4488-001",
+      "title": "Nike SB Dunk Low Neckface",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Nike-SB-Dunk-Low-Neckface.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660248388",
+        "smallImageUrl": "https://images.stockx.com/images/Nike-SB-Dunk-Low-Neckface.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660248388",
+        "thumbUrl": "https://images.stockx.com/images/Nike-SB-Dunk-Low-Neckface.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660248388"
+      }
+    },
+    {
+      "id": "8a23b055-2c9c-46e6-ae69-1540cf2e00ad",
+      "brand": "Jordan",
+      "colorway": "Archaeo Brown/Dark Smoke Grey-Fossil Stone-Light Bordeaux-Cement Grey",
+      "gender": "men",
+      "name": "Winterized Archaeo Brown",
+      "releaseDate": "2022-10-08",
+      "retailPrice": 210,
+      "shoe": "Jodan 3 Retro",
+      "styleId": "DR8869-200",
+      "title": "Jodan 3 Retro Winterized Archaeo Brown",
+      "year": 2022,
+      "media": {
+        "imageUrl": null,
+        "smallImageUrl": null,
+        "thumbUrl": null
+      }
+    },
+    {
+      "id": "14b6963d-e354-4039-9c5b-f773b51f25e1",
+      "brand": "Jordan",
+      "colorway": "Black/Fire Red/Metallic Gold/Cement Grey",
+      "gender": "women",
+      "name": "Black Cement Gold (W)",
+      "releaseDate": "2022-10-06",
+      "retailPrice": 200,
+      "shoe": "Jordan 3 Retro",
+      "styleId": "CK9246-067",
+      "title": "Jordan 3 Retro Black Cement Gold (W)",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Jodan-3-Retro-Black-Cement-Gold-W.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807182",
+        "smallImageUrl": "https://images.stockx.com/images/Jodan-3-Retro-Black-Cement-Gold-W.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807182",
+        "thumbUrl": "https://images.stockx.com/images/Jodan-3-Retro-Black-Cement-Gold-W.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807182"
+      }
+    },
+    {
+      "id": "4a151ea9-0926-4358-8f49-78981d025076",
+      "brand": "Jordan",
+      "colorway": "White/Midnight Navy/Light Smoke Grey-Fire Red",
+      "gender": "men",
+      "name": "White Midnight Navy",
+      "releaseDate": "2022-10-01",
+      "retailPrice": 210,
+      "shoe": "Jordan 4 Retro",
+      "styleId": "DH6927-140",
+      "title": "Jordan 4 Retro White Midnight Navy",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Air-Jordan-4-Retro-White-Midnight-Navy.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807266",
+        "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-4-Retro-White-Midnight-Navy.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807266",
+        "thumbUrl": "https://images.stockx.com/images/Air-Jordan-4-Retro-White-Midnight-Navy.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807266"
+      }
+    },
+    {
+      "id": "292a5794-8fd3-4fec-8c24-7139372fe32c",
+      "brand": "Jordan",
+      "colorway": "Taxi/Black-Sail",
+      "gender": "child",
+      "name": "Yellow Toe (GS)",
+      "releaseDate": "2022-09-24",
+      "retailPrice": 130,
+      "shoe": "Jordan 1 Retro High OG",
+      "styleId": "575441-711",
+      "title": "Jordan 1 Retro High OG Yellow Toe (GS)",
+      "year": 2022,
+      "media": {
+        "imageUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Yellow-Toe-GS.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660549796",
+        "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Yellow-Toe-GS.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660549796",
+        "thumbUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Yellow-Toe-GS.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1660549796"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+.footer {
+  background-color: black;
+  min-height: 200px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 2px solid white;
+  text-align: center;
+  color: white;
+}
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  opacity: 0.8;
+  color: white;
+}
+.footer h2 {
+  font-size: 1rem;
+}
