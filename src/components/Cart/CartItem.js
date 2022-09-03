@@ -3,6 +3,7 @@ import styles from "./CartItem.module.css";
 import deleteIcon from "../../assets/delete.svg";
 import { CartContext } from "../../context/CartContext";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function CartItem({ data }) {
   const [itemQty, setItemQty] = useState(data.qty);

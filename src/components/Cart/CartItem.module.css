@@ -20,7 +20,7 @@
 .item .title {
   font-size: 1.2rem;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .item .price {
     font-weight: bold;
     font-size: 0.8rem;

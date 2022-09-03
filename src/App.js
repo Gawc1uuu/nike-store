@@ -6,6 +6,7 @@ import Women from "./pages/women/Women";
 import Kids from "./pages/kids/Kids";
 import Error from "./pages/error/Error";
 import { useContext } from "react";
+import "react-toastify/dist/ReactToastify.css";
 
 //styles
 import "./App.css";
