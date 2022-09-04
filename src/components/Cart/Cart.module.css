@@ -1,4 +1,4 @@
-.overlay {
+div .overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -155,12 +155,12 @@
     transform: translateY(0);
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .overlay {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 5;
+    width: 90%;
     height: 100vh;
     z-index: 20;
     background-color: rgba(0, 0, 0, 0.75);
