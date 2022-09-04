@@ -46,7 +46,7 @@ export default function CartItem({ data }) {
   };
 
   return (
-    <div className={styles.item}>
+    <div className={styles["cart-item"]}>
       <img
         alt="shoe"
         className={styles.shoeImg}

@@ -1,38 +1,38 @@
-.item {
+.cart-item {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   border-bottom: 1px solid gray;
 }
-.item .shoeImg {
+.cart-item .shoeImg {
   width: 80px;
   height: 60px;
 }
-.item .deleteIcon {
+.cart-item .deleteIcon {
   width: 26px;
   height: 26px;
 }
-.item .price {
+.cart-item .price {
   font-weight: bold;
   font-size: 1.2rem;
 }
-.item .title {
+.cart-item .title {
   font-size: 1.2rem;
 }
 @media (max-width: 768px) {
-  .item .price {
+  .cart-item .price {
     font-weight: bold;
     font-size: 0.8rem;
   }
-  .item .title {
+  .cart-item .title {
     font-size: 0.8rem;
   }
-  .item .shoeImg {
+  .cart-item .shoeImg {
     width: 60px;
     height: 40px;
   }
-  .item .deleteIcon {
+  .cart-item .deleteIcon {
     width: 18px;
     height: 18px;
   }

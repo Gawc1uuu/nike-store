@@ -4,6 +4,7 @@ import emptyCart from "../../assets/empty-cart.svg";
 
 //styles
 import styles from "./Cart.module.css";
+import classes from "./CartItem.module.css";
 import closeIcon from "../../assets/close.svg";
 import { CartContext } from "../../context/CartContext";
 import { ClockLoader } from "react-spinners";
@@ -145,19 +146,24 @@ export default function Cart() {
           alt="close icon"
         />
         <div className={styles.items}>
+          {state.items.length !== 0 &&
+            state.items.map((item) => {
+              total += item.retailPrice * item.qty;
+              return (
+                <CartItem
+                  className={classes["cart-item"]}
+                  key={item.id}
+                  data={item}
+                />
+              );
+            })}
+
           {state.items.length === 0 && (
             <div className={styles.emptyCart}>
               <img src={emptyCart} alt="empty cart" />
               <h3>Your cart is empty!</h3>
             </div>
           )}
-          {state.items.length !== 0 &&
-            state.items.map((item) => {
-              total += item.retailPrice * item.qty;
-              return (
-                <CartItem className={styles.item} key={item.id} data={item} />
-              );
-            })}
         </div>
         {state.items.length !== 0 && (
           <div className={styles.summary}>
