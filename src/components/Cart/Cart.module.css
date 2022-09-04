@@ -205,3 +205,42 @@
     font-size: 1rem;
   }
 }
+.modal .items .cart-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+.modal .items .cart-item .shoeImg {
+  width: 80px;
+  height: 60px;
+}
+.cart-item .deleteIcon {
+  width: 26px;
+  height: 26px;
+}
+.modal .items .cart-item .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.modal .items .cart-item .title {
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .modal .items .cart-item .price {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .modal .items .cart-item .title {
+    font-size: 0.8rem;
+  }
+  .modal .items .cart-item .shoeImg {
+    width: 60px;
+    height: 40px;
+  }
+  .modal .items .cart-item .deleteIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
