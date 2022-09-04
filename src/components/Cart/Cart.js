@@ -1,10 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
-import CartItem from "./CartItem";
 import emptyCart from "../../assets/empty-cart.svg";
 
 //styles
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import styles from "./Cart.module.css";
-import classes from "./CartItem.module.css";
 import closeIcon from "../../assets/close.svg";
 import { CartContext } from "../../context/CartContext";
 import { ClockLoader } from "react-spinners";
@@ -17,6 +18,45 @@ export default function Cart() {
   const [orderDone, setOrderDone] = useState(false);
   const { state, closeCart } = useContext(CartContext);
   let total = 0;
+
+  const [itemQty, setItemQty] = useState(data.qty);
+  const { deleteItem, onInc, onDec } = useContext(CartContext);
+
+  const notifyAdd = () =>
+    toast.info("Quantity increased!", {
+      position: "bottom-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  const notifyDelete = () =>
+    toast.info("Quantity decreased", {
+      position: "bottom-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+  const onMinus = (id) => {
+    if (itemQty > 1) {
+      setItemQty((prevState) => prevState - 1);
+      onDec(id);
+      notifyDelete();
+    }
+  };
+  const onPlus = (id) => {
+    if (itemQty >= 1) {
+      setItemQty((prevState) => prevState + 1);
+      onInc(id);
+      notifyAdd();
+    }
+  };
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -150,11 +190,30 @@ export default function Cart() {
             state.items.map((item) => {
               total += item.retailPrice * item.qty;
               return (
-                <CartItem
-                  className={classes["cart-item"]}
-                  key={item.id}
-                  data={item}
-                />
+                <div className={styles["cart-item"]}>
+                  <img
+                    alt="shoe"
+                    className={styles.shoeImg}
+                    src={
+                      item.media.thumbUrl
+                        ? item.media.thumbUrl
+                        : "https://images.stockx.com/images/Air-Jordan-7-Retro-Cardinal-2022.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1659807271"
+                    }
+                  />
+                  <p className={styles.title}>
+                    {item.title.substring(0, 20)}...
+                  </p>
+                  <p className={styles.price}>${item.retailPrice * item.qty}</p>
+                  <button onClick={() => onMinus(item.id)}>-</button>
+                  <p>{itemQty}</p>
+                  <button onClick={() => onPlus(item.id)}>+</button>
+                  <img
+                    onClick={() => deleteItem(item)}
+                    className={styles.deleteIcon}
+                    src={deleteIcon}
+                    alt="deleteicon"
+                  />
+                </div>
               );
             })}
 
