@@ -154,7 +154,9 @@ export default function Cart() {
           {state.items.length !== 0 &&
             state.items.map((item) => {
               total += item.retailPrice * item.qty;
-              return <CartItem key={item.id} data={item} />;
+              return (
+                <CartItem className={styles.item} key={item.id} data={item} />
+              );
             })}
         </div>
         {state.items.length !== 0 && (
