@@ -10,6 +10,7 @@ import closeIcon from "../../assets/close.svg";
 import { CartContext } from "../../context/CartContext";
 import { ClockLoader } from "react-spinners";
 import checkMark from "../../assets/check.svg";
+import deleteIcon from "../../assets/delete.svg";
 
 export default function Cart() {
   const [isAuth, setIsAuth] = useState(false);
@@ -19,7 +20,7 @@ export default function Cart() {
   const { state, closeCart } = useContext(CartContext);
   let total = 0;
 
-  const [itemQty, setItemQty] = useState(data.qty);
+  const [itemQty, setItemQty] = useState(total);
   const { deleteItem, onInc, onDec } = useContext(CartContext);
 
   const notifyAdd = () =>
