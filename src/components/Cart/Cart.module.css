@@ -52,14 +52,14 @@
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 }
-.modal .close {
+.modalForm .close {
   position: absolute;
   top: 0;
   right: 0;
   width: 32px;
   height: 32px;
 }
-.modal .items {
+.modalForm .items {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -68,19 +68,19 @@
   overflow-y: scroll;
   margin: 0 1rem;
 }
-.modal .formInputs {
+.modalForm .formInputs {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.modal .formInputs label {
+.modalForm .formInputs label {
   margin: 0.5rem 1rem;
 }
-.modal .formInputs label span {
+.modalForm .formInputs label span {
   font-size: 1rem;
   font-weight: 500;
 }
-.modal .formInputs label input {
+.modalForm .formInputs label input {
   height: 1.2rem;
   border: 1px solid black;
 }
@@ -199,7 +199,7 @@
   }
   .modal {
     position: fixed;
-    left: 3%;
+    left: 5%;
     width: 80%;
     background-color: white;
     padding: 1rem;
@@ -236,7 +236,7 @@
   .modalForm {
     position: fixed;
     top: 10%;
-    left: 3%;
+    left: 5%;
     width: 80%;
     background-color: white;
     padding: 1rem;
