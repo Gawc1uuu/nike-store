@@ -188,7 +188,7 @@
   }
   .modal {
     position: fixed;
-    left: 10;
+    left: 3%;
     width: 80%;
     background-color: white;
     padding: 1rem;
