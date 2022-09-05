@@ -20,7 +20,8 @@ export default function Cart() {
   const { state, closeCart } = useContext(CartContext);
   let total = 0;
 
-  const [itemQty, setItemQty] = useState(total);
+  const [itemQty, setItemQty] = useState(1);
+
   const { deleteItem, onInc, onDec } = useContext(CartContext);
 
   const notifyAdd = () =>
@@ -100,25 +101,25 @@ export default function Cart() {
 
   if (isOrdered) {
     return (
-      <div>
+      <React.Fragment>
         <div className={styles.overlay}></div>
         <div className={styles.modalLoading}>
           <ClockLoader color={"#000000"} loading={loading} size={100} />
           <h2>Completing your order!</h2>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 
   if (orderDone) {
     return (
-      <div>
+      <React.Fragment>
         <div className={styles.overlay}></div>
         <div className={styles.modalOrdered}>
           <img src={checkMark} alt="checkmark" />
           <h2>Order completed!</h2>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 
@@ -128,7 +129,7 @@ export default function Cart() {
         return (total += item.retailPrice * item.qty);
       });
     return (
-      <div>
+      <React.Fragment>
         <div className={styles.overlay}></div>
         <div className={styles.modal}>
           <form onSubmit={submitHandler} className={styles.orderFrom}>
@@ -172,12 +173,12 @@ export default function Cart() {
             </div>
           </form>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 
   return (
-    <div>
+    <React.Fragment>
       <div className={styles.overlay}></div>
       <div className={styles.modal}>
         <img
@@ -190,6 +191,7 @@ export default function Cart() {
           {state.items.length !== 0 &&
             state.items.map((item) => {
               total += item.retailPrice * item.qty;
+              setItemQty(item.qty);
               return (
                 <div className={styles["cart-item"]}>
                   <img
@@ -236,6 +238,6 @@ export default function Cart() {
           </div>
         )}
       </div>
-    </div>
+    </React.Fragment>
   );
 }
