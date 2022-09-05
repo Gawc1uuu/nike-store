@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/Cart/Cart";
 import { CartContext } from "./context/CartContext";
 import { useFetch } from "./hooks/useFetch";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const { state } = useContext(CartContext);
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      <ToastContainer />
       {state.isOpen && <Cart />}
       <BrowserRouter>
         <Navbar />
