@@ -209,7 +209,7 @@ export default function Cart() {
                   </p>
                   <p className={styles.price}>${item.retailPrice * item.qty}</p>
                   <button onClick={() => onMinus(item.id)}>-</button>
-                  <p>{itemQty}</p>
+                  <p>{item.qty}</p>
                   <button onClick={() => onPlus(item.id)}>+</button>
                   <img
                     onClick={() => deleteItem(item)}
