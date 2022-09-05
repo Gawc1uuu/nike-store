@@ -132,7 +132,7 @@ export default function Cart() {
     return (
       <React.Fragment>
         <div className={styles.overlay}></div>
-        <div className={styles.modal}>
+        <div className={styles.modalForm}>
           <form onSubmit={submitHandler} className={styles.orderFrom}>
             <div className={styles.formInputs}>
               <label>

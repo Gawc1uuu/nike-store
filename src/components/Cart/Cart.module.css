@@ -41,6 +41,17 @@
   height: 120px;
   animation: bump 750ms ease-out;
 }
+.modalForm {
+  position: fixed;
+  left: 3%;
+  width: 80%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
 .modal .close {
   position: absolute;
   top: 0;
@@ -221,6 +232,18 @@
   }
   .modalOrdered h2 {
     font-size: 1rem;
+  }
+  .modalForm {
+    position: fixed;
+    top: 10%;
+    left: 3%;
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
   }
   .modal .items .cart-item .price {
     font-weight: bold;
