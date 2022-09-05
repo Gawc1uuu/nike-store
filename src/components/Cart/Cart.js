@@ -192,7 +192,7 @@ export default function Cart() {
           {state.items.length !== 0 &&
             state.items.map((item) => {
               total += item.retailPrice * item.qty;
-              let itemQty = item.qty;
+              itemQty = item.qty;
               return (
                 <div className={styles["cart-item"]}>
                   <img
