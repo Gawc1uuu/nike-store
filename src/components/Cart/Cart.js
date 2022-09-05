@@ -19,8 +19,7 @@ export default function Cart() {
   const [orderDone, setOrderDone] = useState(false);
   const { state, closeCart } = useContext(CartContext);
   let total = 0;
-
-  const [itemQty, setItemQty] = useState(1);
+  let itemQty = 1;
 
   const { deleteItem, onInc, onDec } = useContext(CartContext);
 
@@ -47,14 +46,16 @@ export default function Cart() {
 
   const onMinus = (id) => {
     if (itemQty > 1) {
-      setItemQty((prevState) => prevState - 1);
+      itemQty = itemQty - 1;
+      // setItemQty((prevState) => prevState - 1);
       onDec(id);
       notifyDelete();
     }
   };
   const onPlus = (id) => {
     if (itemQty >= 1) {
-      setItemQty((prevState) => prevState + 1);
+      itemQty = itemQty + 1;
+      // setItemQty((prevState) => prevState + 1);
       onInc(id);
       notifyAdd();
     }
@@ -191,6 +192,7 @@ export default function Cart() {
           {state.items.length !== 0 &&
             state.items.map((item) => {
               total += item.retailPrice * item.qty;
+              let itemQty = item.qty;
               return (
                 <div className={styles["cart-item"]}>
                   <img
