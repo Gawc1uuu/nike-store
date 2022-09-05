@@ -43,8 +43,9 @@
 }
 .modalForm {
   position: fixed;
-  left: 3%;
-  width: 80%;
+  top: 25vh;
+  left: 25%;
+  width: 50%;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
