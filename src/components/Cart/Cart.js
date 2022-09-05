@@ -3,7 +3,7 @@ import emptyCart from "../../assets/empty-cart.svg";
 
 //styles
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.min.css";
 
 import styles from "./Cart.module.css";
 import closeIcon from "../../assets/close.svg";
