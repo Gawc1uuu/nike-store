@@ -16,7 +16,7 @@ import { CartContext } from "./context/CartContext";
 import { useFetch } from "./hooks/useFetch";
 
 function App() {
-  const { state, ToastContainer } = useContext(CartContext);
+  const { state } = useContext(CartContext);
   //https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20
   const { data, isPending, error } = useFetch(
     "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
@@ -56,7 +56,6 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-      <ToastContainer />
     </div>
   );
 }
