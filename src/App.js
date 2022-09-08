@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/Cart/Cart";
 import { CartContext } from "./context/CartContext";
 import { ToastContainer } from "react-toastify";
+import Shoe from "./pages/shoe/Shoe";
 
 function App() {
   const { state } = useContext(CartContext);
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path="/error">
             <Error />
+          </Route>
+          <Route path="/shoes/:id">
+            <Shoe />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -1,0 +1,13 @@
+.shoe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  font-size: 3rem;
+  text-align: center;
+}
+.price {
+  color: rgb(12, 212, 12);
+}

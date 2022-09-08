@@ -18,7 +18,7 @@ export default function All() {
   );
 
   const allShoes = data.filter((item) => {
-    if (item.retailPrice && item.media.thumbUrl) {
+    if (item.retailPrice !== 0 && item.media.thumbUrl) {
       return item;
     } else return false;
   });
@@ -51,16 +51,16 @@ export default function All() {
       {error && <p>{error}</p>}
       {filteredData && <Filters data={filteredData} getPrice={getPrice} />}
       {data && !filteredData && <Filters data={data} getPrice={getPrice} />}
-      <div className="loadingDiv">
-        {isPending && (
+      {isPending && (
+        <div className="loadingDiv">
           <ClimbingBoxLoader
             className="loading"
             color={"#000000"}
             loading={isPending}
             size={25}
           />
-        )}
-      </div>
+        </div>
+      )}
       {data && !filteredData && <ShoesList data={data} />}
       {filteredData && <ShoesList data={filteredData} />}
 

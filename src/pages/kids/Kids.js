@@ -50,16 +50,16 @@ export default function Kids() {
         <Filters data={childShoes} getPrice={getPrice} />
       )}
       {error && <p>{error}</p>}
-      <div className="loadingDiv">
-        {isPending && (
+      {isPending && (
+        <div className="loadingDiv">
           <ClimbingBoxLoader
             className="loading"
             color={"#000000"}
             loading={isPending}
             size={25}
           />
-        )}
-      </div>
+        </div>
+      )}
       {data && !filteredData && <ShoesList data={childShoes} />}
       {filteredData && <ShoesList data={filteredData} />}
 

@@ -1,11 +1,13 @@
 import { useState, useContext } from "react";
-
+import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
 //styles
 import styles from "./SingleShoe.module.css";
 import addIcon from "../assets/addToCart.svg";
 import { CartContext } from "../context/CartContext";
+import { SingleShoeContext } from "../context/SingleShoeContext";
+import search from "../assets/search.svg";
 
 export default function SingleShoe({ shoe }) {
   const [clicked, setClicked] = useState(false);
@@ -15,6 +17,7 @@ export default function SingleShoe({ shoe }) {
   };
 
   const { addToCart } = useContext(CartContext);
+  const { getShoe } = useContext(SingleShoeContext);
 
   return (
     <div className={styles.container} onClick={clickHandler}>
@@ -25,6 +28,13 @@ export default function SingleShoe({ shoe }) {
           className={styles.addIcon}
           src={addIcon}
         />
+        <Link
+          className={styles.addIcon}
+          onClick={() => getShoe(shoe)}
+          to={`shoes/${shoe.id}`}
+        >
+          <img src={search} alt="search icon" />
+        </Link>
       </div>
 
       <div className={styles.singleShoe}>
