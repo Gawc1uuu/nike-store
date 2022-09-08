@@ -14,9 +14,8 @@ export function useFetch(url) {
   useEffect(() => {
     const controller = new AbortController();
     setError(null);
-
+    setIsPending(true);
     const getShoes = () => {
-      setIsPending(true);
       try {
         fetch(url, { ...options, signal: controller.signal })
           .then((response) => {
@@ -35,8 +34,9 @@ export function useFetch(url) {
         }
         setError("Could not fetch the data");
       }
-      setIsPending(false);
     };
+
+    setIsPending(false);
 
     getShoes();
 
