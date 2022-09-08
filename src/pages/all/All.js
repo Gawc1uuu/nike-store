@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import Filters from "../../components/Filters";
 import { useHistory } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 //styles
 import Header from "../../components/Header";
 
@@ -47,10 +48,19 @@ export default function All() {
   return (
     <div>
       <Header>ALL SHOES</Header>
-      {isPending && <p className="loading">Loading...</p>}
       {error && <p>{error}</p>}
       {filteredData && <Filters data={filteredData} getPrice={getPrice} />}
       {data && !filteredData && <Filters data={data} getPrice={getPrice} />}
+      <div className="loadingDiv">
+        {isPending && (
+          <ClimbingBoxLoader
+            className="loading"
+            color={"#000000"}
+            loading={isPending}
+            size={25}
+          />
+        )}
+      </div>
       {data && !filteredData && <ShoesList data={data} />}
       {filteredData && <ShoesList data={filteredData} />}
 
