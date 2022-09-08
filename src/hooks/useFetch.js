@@ -29,16 +29,13 @@ export function useFetch(url) {
           //data.results
           .then((data) => setData([...data.results]))
           .catch((err) => console.error(err));
-
-        setIsPending(false);
-        setError(null);
       } catch (err) {
         if (err.name === "AbortError") {
           console.log("the fetch was aborted");
         }
-        setIsPending(false);
         setError("Could not fetch the data");
       }
+      setIsPending(false);
     };
 
     getShoes();

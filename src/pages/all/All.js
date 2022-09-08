@@ -16,8 +16,6 @@ export default function All() {
     "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
   );
 
-  console.log(isPending);
-
   const allShoes = data.filter((item) => {
     if (item.retailPrice && item.media.thumbUrl) {
       return item;
@@ -49,8 +47,8 @@ export default function All() {
   return (
     <div>
       <Header>ALL SHOES</Header>
-      {error && <p>{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
+      {error && <p>{error}</p>}
       {filteredData && <Filters data={filteredData} getPrice={getPrice} />}
       {data && !filteredData && <Filters data={data} getPrice={getPrice} />}
       {data && !filteredData && <ShoesList data={data} />}
