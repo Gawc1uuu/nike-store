@@ -49,10 +49,10 @@ export default function All() {
   return (
     <div>
       <Header>ALL SHOES</Header>
-      {filteredData && <Filters data={filteredData} getPrice={getPrice} />}
-      {data && !filteredData && <Filters data={data} getPrice={getPrice} />}
       {error && <p>{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
+      {filteredData && <Filters data={filteredData} getPrice={getPrice} />}
+      {data && !filteredData && <Filters data={data} getPrice={getPrice} />}
       {data && !filteredData && <ShoesList data={data} />}
       {filteredData && <ShoesList data={filteredData} />}
 
