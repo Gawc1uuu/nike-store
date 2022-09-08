@@ -52,16 +52,16 @@ export default function Men() {
         <Filters data={mensShoes} getPrice={getPrice} />
       )}
       {error && <p>{error}</p>}
-      <div className="loadingDiv">
-        {isPending && (
+      {isPending && (
+        <div className="loadingDiv">
           <ClimbingBoxLoader
             className="loading"
             color={"#000000"}
             loading={isPending}
             size={25}
           />
-        )}
-      </div>
+        </div>
+      )}
       {filteredData && <ShoesList data={filteredData} />}
       {!filteredData && data && <ShoesList data={mensShoes} />}
       <Footer />
