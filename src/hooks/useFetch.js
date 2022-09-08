@@ -27,15 +27,18 @@ export function useFetch(url) {
             }
           })
           //data.results
-          .then((data) => setData([...data.results]))
-          .catch((err) => console.error(err));
+          .then((data) => console.log(data))
+          .catch((err) => console.error(err))
+          .finally(() => {
+            setData([...data.results]);
+            setIsPending(false);
+          });
       } catch (err) {
         if (err.name === "AbortError") {
           console.log("the fetch was aborted");
         }
         setError("Could not fetch the data");
       }
-      setIsPending(false);
     };
 
     getShoes();
@@ -43,7 +46,7 @@ export function useFetch(url) {
     return () => {
       controller.abort();
     };
-  }, [url]);
+  }, [url, data.results]);
 
   return { data, isPending, error };
 }

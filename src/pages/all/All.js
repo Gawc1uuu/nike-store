@@ -3,63 +3,18 @@ import ShoesList from "../../components/ShoesList";
 import Footer from "../../components/Footer";
 import Filters from "../../components/Filters";
 import { useHistory } from "react-router-dom";
-// import { useFetch } from "../../hooks/useFetch";
+import { useFetch } from "../../hooks/useFetch";
 //styles
 import Header from "../../components/Header";
-
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": `${process.env.REACT_APP_API_KEY}`,
-    "X-RapidAPI-Host": "v1-sneakers.p.rapidapi.com",
-  },
-};
 
 export default function All() {
   const [price, setPrice] = useState(null);
   const [filteredData, setFilteredData] = useState(null);
   const history = useHistory();
 
-  const [isPending, setIsPending] = useState(false);
-  const [error, setError] = useState(null);
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const controller = new AbortController();
-    setError(null);
-
-    const getShoes = () => {
-      setIsPending(true);
-      try {
-        fetch("https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20", {
-          ...options,
-          signal: controller.signal,
-        })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(response.statusText);
-            } else {
-              return response.json();
-            }
-          })
-          //data.results
-          .then((data) => setData([...data.results]))
-          .catch((err) => console.error(err));
-      } catch (err) {
-        if (err.name === "AbortError") {
-          console.log("the fetch was aborted");
-        }
-        setError("Could not fetch the data");
-      }
-      setIsPending(false);
-    };
-
-    getShoes();
-
-    return () => {
-      controller.abort();
-    };
-  }, []);
+  const { data, isPending, error } = useFetch(
+    "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
+  );
 
   const allShoes = data.filter((item) => {
     if (item.retailPrice && item.media.thumbUrl) {
