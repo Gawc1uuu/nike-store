@@ -50,7 +50,7 @@ export default function All() {
       {filteredData && <Filters data={filteredData} getPrice={getPrice} />}
       {data && !filteredData && <Filters data={data} getPrice={getPrice} />}
       {error && <p>{error}</p>}
-      <div className="loadingDiv">{isPending && <p>Loading...</p>}</div>
+      {isPending && <p className="loading">Loading...</p>}
       {data && !filteredData && <ShoesList data={data} />}
       {filteredData && <ShoesList data={filteredData} />}
 
