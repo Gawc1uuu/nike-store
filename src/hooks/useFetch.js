@@ -27,10 +27,9 @@ export function useFetch(url) {
             }
           })
           //data.results
-          .then((data) => console.log(data))
+          .then((data) => setData([...data.results]))
           .catch((err) => console.error(err))
           .finally(() => {
-            setData([...data.results]);
             setIsPending(false);
           });
       } catch (err) {
@@ -46,7 +45,7 @@ export function useFetch(url) {
     return () => {
       controller.abort();
     };
-  }, [url, data.results]);
+  }, [url]);
 
   return { data, isPending, error };
 }
