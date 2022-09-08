@@ -13,23 +13,10 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart/Cart";
 import { CartContext } from "./context/CartContext";
-import { useFetch } from "./hooks/useFetch";
 import { ToastContainer } from "react-toastify";
 
 function App() {
   const { state } = useContext(CartContext);
-  //https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20
-  const { data, isPending, error } = useFetch(
-    "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
-  );
-
-  const allShoes = data.filter((item) => {
-    if (item.retailPrice && item.media.thumbUrl) {
-      return item;
-    } else return false;
-  });
-
-  const shoesArr = allShoes.map((item) => ({ ...item, qty: 0 }));
 
   return (
     <div className="App">
@@ -42,19 +29,19 @@ function App() {
             <Home />
           </Route>
           <Route path="/all">
-            <All data={shoesArr} isPending={isPending} error={error} />
+            <All />
           </Route>
           <Route path="/men">
-            <Men data={shoesArr} isPending={isPending} error={error} />
+            <Men />
           </Route>
           <Route path="/women">
-            <Women data={shoesArr} isPending={isPending} error={error} />
+            <Women />
           </Route>
           <Route path="/kids">
-            <Kids data={shoesArr} isPending={isPending} error={error} />
+            <Kids />
           </Route>
           <Route path="/error">
-            <Error error={error} />
+            <Error />
           </Route>
         </Switch>
       </BrowserRouter>

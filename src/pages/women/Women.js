@@ -5,7 +5,19 @@ import Filters from "../../components/Filters";
 import { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import { useHistory } from "react-router-dom";
-export default function Women({ data, isPending, error }) {
+import { useFetch } from "../../hooks/useFetch";
+
+export default function Women() {
+  const { data, isPending, error } = useFetch(
+    "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
+  );
+  const history = useHistory();
+  useEffect(() => {
+    if (error) {
+      history.push("/error");
+    }
+  }, [error, history]);
+
   const womenShoes = data.filter((item) => {
     if (item.gender === "women" && item.retailPrice) {
       return item;
@@ -13,14 +25,6 @@ export default function Women({ data, isPending, error }) {
   });
   const [price, setPrice] = useState(null);
   const [filteredData, setFilteredData] = useState(null);
-
-  const history = useHistory();
-
-  useEffect(() => {
-    if (error) {
-      history.push("/error");
-    }
-  }, [error, history]);
 
   const getPrice = (price) => {
     setPrice(price);

@@ -4,13 +4,26 @@ import ShoesList from "../../components/ShoesList";
 import Footer from "../../components/Footer";
 import Filters from "../../components/Filters";
 import { useHistory } from "react-router-dom";
+import { useFetch } from "../../hooks/useFetch";
 //styles
 import Header from "../../components/Header";
 
-export default function All({ data, isPending, error }) {
+export default function All() {
   const [price, setPrice] = useState(null);
   const [filteredData, setFilteredData] = useState(null);
   const history = useHistory();
+
+  const { data, isPending, error } = useFetch(
+    "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
+  );
+
+  const allShoes = data.filter((item) => {
+    if (item.retailPrice && item.media.thumbUrl) {
+      return item;
+    } else return false;
+  });
+
+  const shoesArr = allShoes.map((item) => ({ ...item, qty: 0 }));
 
   useEffect(() => {
     if (error) {
@@ -23,14 +36,14 @@ export default function All({ data, isPending, error }) {
   };
   useEffect(() => {
     if (price) {
-      let arr = data.filter((shoe) => {
+      let arr = shoesArr.filter((shoe) => {
         if (shoe.retailPrice <= price) {
           return shoe;
         } else return false;
       });
       setFilteredData([...arr]);
     }
-  }, [price, data]);
+  }, [price, shoesArr]);
 
   return (
     <div>

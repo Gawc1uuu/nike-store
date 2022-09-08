@@ -5,7 +5,13 @@ import Filters from "../../components/Filters";
 import { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import { useHistory } from "react-router-dom";
-export default function Kids({ data, isPending, error }) {
+import { useFetch } from "../../hooks/useFetch";
+
+export default function Kids() {
+  const { data, isPending, error } = useFetch(
+    "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
+  );
+
   const childShoes = data.filter((item) => {
     if (item.gender === "child" && item.retailPrice) {
       return item;

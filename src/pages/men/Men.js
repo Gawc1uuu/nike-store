@@ -5,12 +5,17 @@ import ShoesList from "../../components/ShoesList";
 import Footer from "../../components/Footer";
 import Filters from "../../components/Filters";
 import { useHistory } from "react-router-dom";
+import { useFetch } from "../../hooks/useFetch";
 
-export default function Men({ data, isPending, error }) {
+export default function Men() {
   const [price, setPrice] = useState(null);
   const [filteredData, setFilteredData] = useState(null);
 
   const history = useHistory();
+
+  const { data, isPending, error } = useFetch(
+    "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
+  );
 
   useEffect(() => {
     if (error) {
