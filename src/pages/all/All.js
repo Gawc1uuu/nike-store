@@ -16,6 +16,8 @@ export default function All() {
     "https://v1-sneakers.p.rapidapi.com/v1/sneakers?limit=20"
   );
 
+  console.log(isPending);
+
   const allShoes = data.filter((item) => {
     if (item.retailPrice && item.media.thumbUrl) {
       return item;
