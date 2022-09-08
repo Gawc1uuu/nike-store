@@ -56,7 +56,7 @@ export default function All() {
           <ClimbingBoxLoader
             className="loading"
             color={"#000000"}
-            loading={isPending}
+            loading={true}
             size={25}
           />
         )}
