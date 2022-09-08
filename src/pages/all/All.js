@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import ShoesList from "../../components/ShoesList";
 import Footer from "../../components/Footer";
 import Filters from "../../components/Filters";
@@ -51,16 +50,7 @@ export default function All() {
       {filteredData && <Filters data={filteredData} getPrice={getPrice} />}
       {data && !filteredData && <Filters data={data} getPrice={getPrice} />}
       {error && <p>{error}</p>}
-      <div className="loadingDiv">
-        {isPending && (
-          <ClimbingBoxLoader
-            className="loading"
-            color={"#000000"}
-            loading={true}
-            size={25}
-          />
-        )}
-      </div>
+      <div className="loadingDiv">{isPending && <p>Loading...</p>}</div>
       {data && !filteredData && <ShoesList data={data} />}
       {filteredData && <ShoesList data={filteredData} />}
 
